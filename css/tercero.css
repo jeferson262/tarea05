@@ -1,0 +1,191 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #000;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.recover-box {
+    background: linear-gradient(to bottom, #f5f5f5 80%, #e8e8e8 100%);
+    padding: 0;
+    border-radius: 0px;
+    width: 350px;
+    color: #000;
+    overflow: hidden;
+    border: 1.5px solid #a36fdb; /* Borde pequeño y visible */
+    /* Sombra más notoria y desplazada hacia la derecha */
+    box-shadow: 30px 0 45px 5px rgba(124, 53, 211, 0.35);
+}
+
+h2 {
+    text-align: center;
+    margin: 0;
+    font-size: 20px;
+    color: #000000;
+    border-radius: 0px 0px 0 0;
+    padding: 30px 0 17px 0;
+    background-color: #ffffff;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: 'Georgia', serif;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+p {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 14px;
+    color: #666;
+    padding: 0 20px;
+}
+
+.input-group {
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.input-icon-group {
+    position: relative;
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.input-icon-group input {
+    width: 100%;
+    padding: 12px 50px 12px 12px;
+    border: 3px solid #a36fdb;
+    border-radius: 7px;
+    font-size: 16px;
+    background-color: #fff;
+    color: #000;
+    transition: border-color 0.3s;
+    display: block;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.input-icon-group input:focus {
+    outline: none;
+    border-color: #7c35d3;
+}
+
+.input-icon-group .icon {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #080808;
+    font-size: 18px;
+    pointer-events: none;
+    background-color: #f0f0f0;
+    padding: 8px;
+    border-radius: 4px;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.input-icon-group .icon {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #080808;
+    font-size: 18px;
+    pointer-events: none;
+    background-color: #f0f0f0;
+    padding: 8px;
+    border-radius: 4px;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    padding: 0 20px;
+}
+
+.btn-enviar {
+    background-color: #7c35d3;
+    color: #ffffff;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    transition: background-color 0.3s;
+    position: relative;
+}
+
+.btn-enviar i {
+    position: absolute;
+    left: 4px;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 8px;
+    border-radius: 4px;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-enviar:hover {
+    background-color: #6a2db8;
+}
+
+.btn-enviar i {
+    font-size: 14px;
+}
+
+.volver-link {
+    text-align: center;
+    padding: 0 20px 20px 20px;
+}
+
+.volver-link a {
+    color: #7c35d3;
+    font-size: 14px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.volver-link a:hover {
+    color: #6a2db8;
+    text-decoration: underline;
+}
