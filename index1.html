@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Usuario</title>
+    <link rel="stylesheet" href="css/segundo.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-box">
+            <h2>Register</h2>
+            <form action="#">
+                <div class="input-group">
+                    <label for="username">User Name</label>
+                    <input type="text" id="username" name="username"  required>
+                </div>
+                <div class="input-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone"  required>
+                </div>
+                <div class="input-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email"  required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <div class="input-icon-group">
+                        <input type="password" id="password" name="password" required>
+                        <i class="fa-solid fa-eye icon"></i>
+                    </div>
+                </div>
+                <div class="input-group">
+                    <label for="confirm-password">Confirm Password</label>
+                    <div class="input-icon-group">
+                        <input type="password" id="confirm-password" name="confirm-password" required>
+                        <i class="fa-solid fa-eye icon"></i>
+                    </div>
+                </div>
+                
+            </form>
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/c1708f8692.js" crossorigin="anonymous"></script>
+    <script>
+        // Cuando se presione el botón cancelar, redirige a index.html
+        document.getElementById('cancelar-btn').addEventListener('click', function(e) {
+            e.preventDefault(); // Evita el reseteo del formulario
+            window.location.href = 'index.html';
+        });
+    </script>
+</body>
+</html>
